@@ -7,7 +7,7 @@ function solution(N) {
         let numbersB = solution(N - 2).toString().split('').map(x => parseInt(x));
         let sumA = 0;
         numbersA.forEach(element => sumA += element);
-        sumB = 0;
+        let sumB = 0;
         numbersB.forEach(element => sumB += element);
         return sumA + sumB;
 
